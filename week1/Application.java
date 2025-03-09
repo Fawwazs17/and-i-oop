@@ -4,7 +4,7 @@ public class Application {
         myCar.displayDetails();
         
         // Additional test instances
-        Car anotherCar = new Car("Honda", "Civic", 2022);
+        Car anotherCar = new Car("Honda", "Civic Ketam", 2022);
         anotherCar.displayDetails();
     }
 }
