@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Upload</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            text-align: center;
+        }
+        form {
+            margin-bottom: 20px;
+        }
+        .media-item {
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Upload Media</h1>
+    <form action="/upload" method="post" enctype="multipart/form-data">
+        <input type="file" name="file" required>
+        <button type="submit">Upload</button>
+    </form>
+
+    <h2>Uploaded Media</h2>
+    <div>
+        {% for file in files %}
+            <div class="media-item">
+                {% if "image" in file[2] %}
+                    <img src="{{ url_for('get_media', file_id=file[0]) }}" alt="{{ file[1] }}" width="200">
+                {% elif "video" in file[2] %}
+                    <video width="320" height="240" controls>
+                        <source src="{{ url_for('get_media', file_id=file[0]) }}" type="{{ file[2] }}">
+                        Your browser does not support the video tag.
+                    </video>
+                {% endif %}
+                <p>{{ file[1] }}</p>
+            </div>
+        {% endfor %}
+    </div>
+</body>
+</html>

@@ -33,4 +33,6 @@ public class Point2D {
     public void setY(int y) {
         this.y = y;
     }
+
+    
 }
