@@ -1,8 +1,8 @@
-public class TestRectangle {
+public class RectangleTest {
     public static void main(String[] args) {
         Rectangle rect1 = new Rectangle(4, 40);
         Rectangle rect2 = new Rectangle(3.5, 35.9);
-
+        
         System.out.println("Rectangle 1:");
         System.out.println("Width: " + rect1.getWidth());
         System.out.println("Height: " + rect1.getHeight());

@@ -1,8 +1,10 @@
 public class Rectangle {
-    private double width = 1.0;
-    private double height = 1.0;
+    private double width;
+    private double height;
 
-    public Rectangle() {}
+    public Rectangle() {
+        this(1.0, 1.0);
+    }
 
     public Rectangle(double width, double height) {
         this.width = width;

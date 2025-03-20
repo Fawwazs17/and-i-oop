@@ -9,15 +9,15 @@ public class Stock {
         this.name = name;
     }
 
+    public double getChangePercent() {
+        return ((currentPrice - previousClosingPrice) / previousClosingPrice) * 100;
+    }
+
     public void setPreviousClosingPrice(double price) {
         previousClosingPrice = price;
     }
 
     public void setCurrentPrice(double price) {
         currentPrice = price;
-    }
-
-    public double getChangePercent() {
-        return ((currentPrice - previousClosingPrice) / previousClosingPrice) * 100;
     }
 }
