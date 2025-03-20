@@ -1,3 +1,6 @@
+/*
+ * Author: ADAM FAWWAZ BIN SAZALIZAM, MAT NUM 24116969, SECT 5
+ */
 public class AccountTest {
     public static void main(String[] args) {
         Account account = new Account(1122, 20000);

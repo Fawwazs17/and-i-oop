@@ -1,3 +1,6 @@
+/*
+ * Author: ADAM FAWWAZ BIN SAZALIZAM, MAT NUM 24116969, SECT 5
+ */
 public class Rectangle {
     private double width;
     private double height;

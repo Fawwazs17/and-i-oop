@@ -1,3 +1,6 @@
+/*
+ * Author: ADAM FAWWAZ BIN SAZALIZAM, MAT NUM 24116969, SECT 5
+ */
 public class RectangleTest {
     public static void main(String[] args) {
         Rectangle rect1 = new Rectangle(4, 40);

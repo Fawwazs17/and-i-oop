@@ -1,3 +1,6 @@
+/*
+ * Author: ADAM FAWWAZ BIN SAZALIZAM, MAT NUM 24116969, SECT 5
+ */
 public class Stock {
     private String symbol;
     private String name;

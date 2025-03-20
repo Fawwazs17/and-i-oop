@@ -1,3 +1,6 @@
+/*
+ * Author: ADAM FAWWAZ BIN SAZALIZAM, MAT NUM 24116969, SECT 5
+ */
 import java.util.Date;
 
 public class Account {
